@@ -1,0 +1,30 @@
+.best > .box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.best > .box > .cards {
+    border-radius: 5px;
+    background-color: palevioletred;
+    height: 450px;
+    margin-top: 10px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .best > .box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px){
+    .best > .box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

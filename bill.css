@@ -1,0 +1,11 @@
+.required{
+        color: red;
+        font-size: small;
+        font-style: italic;
+        display: none;
+      }
+
+      .required-field::after{
+        content: "*";
+        color: red;
+      }
